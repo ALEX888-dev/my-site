@@ -3,32 +3,11 @@ import {
   Gauge, Workflow, Heart, Award, MessageCircle, Clock, Sparkles,
 } from "lucide-react";
 
-import reel1 from "@/assets/reel-1.mov.asset.json";
-import reel2 from "@/assets/reel-2.mov.asset.json";
-import reel3 from "@/assets/reel-3.mp4.asset.json";
-import reel4 from "@/assets/reel-4.mp4.asset.json";
-import reel1p from "@/assets/reel-1-poster.jpg.asset.json";
-import reel2p from "@/assets/reel-2-poster.jpg.asset.json";
-import reel3p from "@/assets/reel-3-poster.jpg.asset.json";
-import reel4p from "@/assets/reel-4-poster.jpg.asset.json";
-import clientLg1 from "@/assets/client-littlegarden-1.jpg.asset.json";
-import clientLg2 from "@/assets/client-littlegarden-2.jpg.asset.json";
-import clientOi1 from "@/assets/client-oishii-1.jpg.asset.json";
-import clientOi2 from "@/assets/client-oishii-2.jpg.asset.json";
-import ba1b from "@/assets/ba1-before.jpg.asset.json";
-import ba1a from "@/assets/ba1-after.jpg.asset.json";
-import ba2b from "@/assets/ba2-before.jpg.asset.json";
-import ba2a from "@/assets/ba2-after.jpg.asset.json";
-import ba3b from "@/assets/ba3-before.jpg.asset.json";
-import ba3a from "@/assets/ba3-after.jpg.asset.json";
-import certProducer from "@/assets/cert-producer.jpeg.asset.json";
-import certCreator from "@/assets/cert-content-creator.jpeg.asset.json";
-
 export const REELS = [
-  { src: reel1.url, poster: reel1p.url },
-  { src: reel2.url, poster: reel2p.url },
-  { src: reel3.url, poster: reel3p.url },
-  { src: reel4.url, poster: reel4p.url },
+  { src: "/videos/reel-1.mov", poster: "/images/reel-1-poster.jpg" },
+  { src: "/videos/reel-2.mov", poster: "/images/reel-2-poster.jpg" },
+  { src: "/videos/reel-3.mp4", poster: "/images/reel-3-poster.jpg" },
+  { src: "/videos/reel-4.mp4", poster: "/images/reel-4-poster.jpg" },
 ];
 export type Reel = (typeof REELS)[number];
 
@@ -38,28 +17,27 @@ export const CLIENTS = [
     handle: "@littlegarden_fi",
     tag: "Café & Restaurant",
     note: "Built the visual identity from day one — cohesive editorial feed, on-brand reels, warm color story.",
-    shots: [clientLg1.url, clientLg2.url],
+    shots: ["/images/littlegarden-1.jpg", "/images/littlegarden-2.jpg"],
   },
   {
     name: "oishii",
     handle: "@oishii_wiener",
     tag: "Japanese Kitchen",
     note: "Long-term partner from launch — art-directed grid, cinematic food reels, elevated Japanese aesthetic.",
-    shots: [clientOi1.url, clientOi2.url],
+    shots: ["/images/oishii-1.jpg", "/images/oishii-2.jpg"],
   },
 ];
 
 export const BEFORE_AFTER = [
-  { before: ba1b.url, after: ba1a.url, title: "Real Estate Brand", note: "From scattered listings to a cohesive editorial feed." },
-  { before: ba2b.url, after: ba2a.url, title: "Automotive Showroom", note: "Chaotic grid restructured into a premium visual story." },
-  { before: ba3b.url, after: ba3a.url, title: "Lifestyle Personal Brand", note: "A curated aesthetic with consistent tone and color." },
+  { before: "/images/ba-realestate-before.jpg", after: "/images/ba-realestate-after.jpg", title: "Real Estate Brand", note: "From scattered listings to a cohesive editorial feed." },
+  { before: "/images/ba-auto-before.jpg", after: "/images/ba-auto-after.jpg", title: "Automotive Showroom", note: "Chaotic grid restructured into a premium visual story." },
+  { before: "/images/ba-lifestyle-before.jpg", after: "/images/ba-lifestyle-after.jpg", title: "Lifestyle Personal Brand", note: "A curated aesthetic with consistent tone and color." },
 ];
 
 export const CERTIFICATES = [
-  { src: certProducer.url, title: "Producer Certificate", issuer: "Department of Aesthetics — Polina Podpletennaya", date: "12.12.2022" },
-  { src: certCreator.url, title: "Content Creator Certificate", issuer: "Department of Aesthetics — Polina Podpletennaya", date: "12.12.2022" },
+  { src: "/images/cert-producer.jpeg", title: "Producer Certificate", issuer: "Department of Aesthetics — Polina Podpletennaya", date: "12.12.2022" },
+  { src: "/images/cert-content-creator.jpeg", title: "Content Creator Certificate", issuer: "Department of Aesthetics — Polina Podpletennaya", date: "12.12.2022" },
 ];
-
 export const SERVICES = [
   { icon: Instagram, title: "Social Media Management", desc: "Instagram & TikTok, curated end-to-end." },
   { icon: LayoutGrid, title: "Feed Design", desc: "Cohesive, editorial grids that feel like a magazine." },
