@@ -4,10 +4,10 @@ import {
 } from "lucide-react";
 
 export const REELS = [
-  { src: "/videos/reel-1.mov", poster: "/images/reel-1-poster.jpg" },
-   { src: "/videos/reel-2.mov", poster: "/images/reel-2-poster.jpg" },
-   { src: "/videos/reel-3.mp4", poster: "/images/reel-3-poster.jpg" },
-   { src: "/videos/reel-4.mp4", poster: "/images/reel-4-poster.jpg" },
+{ src: "/videos/reel-1.mov", poster: "/images/reel-1-poster.png" },
+{ src: "/videos/reel-2.mov", poster: "/images/reel-2-poster.png" },
+{ src: "/videos/reel-3.mp4", poster: "/images/reel-3-poster.png" },
+{ src: "/videos/reel-4.mp4", poster: "/images/reel-4-poster.png" },
 ];
 export type Reel = (typeof REELS)[number];
 
