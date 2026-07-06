@@ -1,7 +1,5 @@
 import { ArrowUpRight, Camera, Film, Instagram, Phone, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg-luxury.jpg.asset.json";
-import smmHero from "@/assets/smm-hero.jpg.asset.json";
-import smmContact from "@/assets/smm-contact.jpg.asset.json";
 import { INSTAGRAM_URL } from "@/data/site";
 
 const STATS = [["6+", "Years exp."], ["3", "Years pro"], ["EU", "Available"]] as const;
@@ -26,15 +24,6 @@ export function Hero() {
         <p className="mt-7 mx-auto max-w-xl text-lg text-muted-foreground text-balance">
           Helping brands grow through aesthetic content, strategy and creative storytelling.
         </p>
-
-        <div aria-hidden className="pointer-events-none hidden md:block">
-          <figure className="absolute -left-4 lg:-left-10 top-6 w-40 lg:w-48 aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-white/60 shadow-[var(--shadow-soft)] rotate-[-6deg] animate-float-slow">
-            <img src={smmHero.url} alt="" className="h-full w-full object-cover" loading="lazy" />
-          </figure>
-          <figure className="absolute -right-4 lg:-right-10 top-24 w-40 lg:w-48 aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-white/60 shadow-[var(--shadow-soft)] rotate-[5deg] animate-float-slow" style={{ animationDelay: "-4s" }}>
-            <img src={smmContact.url} alt="" className="h-full w-full object-cover" loading="lazy" />
-          </figure>
-        </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3 relative">
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer"
