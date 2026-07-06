@@ -1,5 +1,5 @@
-import alina1 from "@/assets/alina-1.jpg.asset.json";
-import alina3 from "@/assets/alina-3.jpg.asset.json";
+const alina1 = { url: "/images/alina-1.jpg" };
+const alina3 = { url: "/images/alina-3.jpg" };
 import { SectionTitle } from "@/components/common/SectionTitle";
 
 const TAGS = ["Vienna, Austria", "29", "3 yrs professional", "6+ yrs total"];
